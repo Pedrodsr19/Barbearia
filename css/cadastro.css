@@ -1,0 +1,81 @@
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+    --cor-principal: rgb(20, 44, 76);
+    --cor-secundaria: rgb(253, 73, 19);
+    --cor-tercearia: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    height: 75%;
+    width: 30%;
+    min-width: 30%;
+    border: 3px solid var(--cor-secundaria);
+    background-color: var(--cor-tercearia);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#logoPrincipal {
+    height: 150px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid var(--cor-secundaria);
+    outline: none;
+    width: 70%;
+    padding: 5px;
+}
+
+#cadastrar {
+    width: 30%;
+    height: 10%;
+    color: var(--cor-tercearia);
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-principal);
+    border-radius: 10px;
+    transition: transform 0.6s ease;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    cursor: pointer;
+}
+
+#cadastrar:active {
+    transform: scale(0.85);
+}
+
+#cadastrar:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1440px) {
+    form {
+        width: 90vw;
+        height: 70vh;
+    }
+}
