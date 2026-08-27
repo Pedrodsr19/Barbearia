@@ -1,0 +1,53 @@
+:root {
+    --cor-fundo: rgb(1, 49, 110);
+    --cor-secundaria: rgb(253, 73, 19);
+    --cor-tercearia: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    background-color: var(--cor-fundo);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+}
+
+#logoPrincipal {
+    height: 75px;
+}
+
+#menu {
+    flex: 2;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.menuItens {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#ativado {
+    background-color: var(--cor-secundaria);
+}
+
+.miniIcons {
+    height: 25px;
+}
+
+.menuItens:hover {
+    background-color: var(--cor-secundaria);
+}
+
+#homePage {
+    flex: 15;
+    background-color: white;
+}

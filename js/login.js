@@ -11,17 +11,18 @@ document.addEventListener("keydown", (event) => {
 
 botaoLogin.addEventListener("click", () => {
     if (localStorage.getItem("usuario") != null) {
-        if (inputEmailLogin.value.trim() != "" && 
-        inputSenhaLogin.value.trim() != "" && 
-        inputEmailLogin.value.includes("@")) {
-            if (usuarioSalvo.email === inputEmailLogin.value && usuarioSalvo.senha === inputSenhaLogin.value){
-             alert("Bem Vindo de Volta")
-             window.location.href = "home.html"
+        if (inputEmailLogin.value.trim() != "" &&
+            inputSenhaLogin.value.trim() != "" &&
+            inputEmailLogin.value.includes("@")) {
+            if (usuarioSalvo.email === inputEmailLogin.value && usuarioSalvo.senha === inputSenhaLogin.value) {
+                localStorage.setItem("ativo", "true")
+                alert("Bem Vindo de Volta")
+                window.location.href = "home.html"
             } else {
                 alert("Email ou Senhas Incorretos")
                 return
             }
-        } else {
+        } else {    
             alert("Email ou Senha Invalidos")
             return
         }
