@@ -1,3 +1,7 @@
+if (localStorage.getItem("ativo") === "true") {
+    window.location.href = "home.html"
+}
+
 let botaoLogin = document.getElementById('logar')
 let inputEmailLogin = document.getElementById("inputEmailLogin")
 let inputSenhaLogin = document.getElementById("inputSenhaLogin")

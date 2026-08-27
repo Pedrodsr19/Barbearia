@@ -1,3 +1,7 @@
+if (localStorage.getItem("ativo") === "true") {
+    window.location.href = "home.html"
+}
+
 let botaoCadastrar = document.getElementById("cadastrar")
 let inputNome = document.getElementById("inputNome")
 let inputEmail = document.getElementById("inputEmail")
