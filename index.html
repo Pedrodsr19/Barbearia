@@ -10,15 +10,22 @@
 </head>
 
 <body>
-    <form>
+    <div id="ladoEsquerdo">
         <img src="img/logo.png" alt="Logo da empresa" id="logoPrincipal">
-        <input type="text" placeholder="Nome" required id="inputNome">
-        <input type="email" placeholder="Email" required id="inputEmail">
-        <input type="password" placeholder="Senha" required id="inputSenha">
-        <button id="cadastrar" type="button">Cadastrar</button>
-        <span>Já tem um cadastro? <a href="login.html">Login</a></span>
-    </form>
+    </div>
+    <div id="ladoDireito">
+        <form>
+            <span id="textoCriarConta">Criar Conta</span>
+            <span id="textoCadastreSe">Cadastre-se</span>
+            <input type="text" placeholder="Nome" required id="inputNome">
+            <input type="email" placeholder="Email" required id="inputEmail">
+            <input type="password" placeholder="Senha" required id="inputSenha">
+            <button id="cadastrar" type="button">Cadastrar</button>
+            <span id="jaCadastro">Já tem um cadastro? <a href="login.html">Login</a></span>
+        </form>
+    </div>
 
     <script src="js/cadastro.js"></script>
 </body>
-</html> 
+
+</html>

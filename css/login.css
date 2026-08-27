@@ -9,45 +9,77 @@ body {
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background-color: var(--cor-principal);
+    background-image: url(../img/imagemFundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+#ladoEsquerdo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ladoDireito {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
 form {
-    height: 75%;
-    width: 30%;
-    min-width: 30%;
-    border: 3px solid var(--cor-secundaria);
+    height: 30rem;
+    width: 25rem;
     background-color: var(--cor-tercearia);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 2.75rem;
     border-radius: 10px;
-    padding: 5px;
+    padding: 1rem;
+    padding-top: 2rem;
 }
 
 #logoPrincipal {
-    height: 130px;
+    height: 200px;
+}
+
+#bemVindo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--cor-principal);
+    align-self: baseline;
+    margin-left: 15%;
+}
+
+#facaLogin {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: gray;
+    align-self: baseline;
+    margin-left: 15%;
 }
 
 input {
-    border: none;
-    border-bottom: 2px solid var(--cor-secundaria);
+    border: 2px solid gray;
     outline: none;
     width: 70%;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #logar {
-    width: 30%;
-    height: 10%;
+    width: 70%;
+    height: 3rem;
     color: var(--cor-tercearia);
     background-color: var(--cor-secundaria);
-    border: 2px solid var(--cor-principal);
+    border: 2px solid var(--cor-secundaria);
     border-radius: 10px;
     transition: transform 0.6s ease;
     font-weight: bold;
@@ -60,6 +92,10 @@ a {
     cursor: pointer;
 }
 
+input:focus {
+    border-color: var(--cor-secundaria);
+}
+
 #logar:active {
     transform: scale(0.85);
 }
@@ -68,9 +104,74 @@ a {
     transform: scale(1.05);
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1024px) {
+    #logoPrincipal {
+        height: 150px;
+    }
+
     form {
-        width: 90vw;
-        height: 70vh;
+        width: 20rem;
+        height: 25rem;
+        gap: 2.25rem;
+    }
+
+    #bemVindo {
+        font-size: 1.5rem;
+    }
+
+    #facaLogin {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 790px) {
+    #logoPrincipal {
+        height: 125px;
+    }
+
+    form {
+        width: 15rem;
+        height: 20rem;
+        gap: 2rem;
+    }
+
+    #bemVindo {
+        font-size: 1.25rem;
+    }
+
+    #facaLogin {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #ladoDireito, #ladoEsquerdo {
+        flex: 0;
+    }
+
+    body {
+        background-image: url(../img/imagemFundoMobile.png);
+        flex-direction: column;
+    }
+
+    form {
+        background-color: transparent;
+    }
+
+    #bemVindo {
+        color: var(--cor-tercearia);
+    }
+
+    #facaLogin {
+        color: var(--cor-tercearia);
+    }
+
+    #jaCadastro {
+        color: white;
+    }
+
+    #logar {
+        width: 80%;
+        
     }
 }

@@ -9,6 +9,12 @@ function salvar() {
     localStorage.setItem("usuario", usuarioJSON)
 }
 
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        botaoCadastrar.click()
+    }
+})
+
 botaoCadastrar.addEventListener("click", () => {
     if (localStorage.getItem("usuario") != null) {
         alert("Usuario já cadastrado")

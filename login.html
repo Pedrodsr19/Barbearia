@@ -10,14 +10,21 @@
 </head>
 
 <body>
-    <form>
+    <div id="ladoEsquerdo">
         <img src="img/logo.png" alt="Logo da empresa" id="logoPrincipal">
-        <input type="email" placeholder="Email" required id="inputEmailLogin">
-        <input type="password" placeholder="Senha" required id="inputSenhaLogin">
-        <button id="logar" type="button">Entrar</button>
-        <span>Não tem um cadastro? <a href="index.html">Cadastro</a></span>
-    </form>
+    </div>
+    <div id="ladoDireito">
+        <form>
+            <span id="bemVindo">Bem Vindo de Volta</span>
+            <span id="facaLogin">Faça login para acessar sua conta</span>
+            <input type="email" placeholder="Email" required id="inputEmailLogin">
+            <input type="password" placeholder="Senha" required id="inputSenhaLogin">
+            <button id="logar" type="button">Entrar</button>
+            <span id="jaCadastro">Não tem um cadastro? <a href="index.html">Cadastro</a></span>
+        </form>
+    </div>
 
     <script src="js/login.js"></script>
 </body>
+
 </html>

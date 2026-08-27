@@ -3,6 +3,12 @@ let inputEmailLogin = document.getElementById("inputEmailLogin")
 let inputSenhaLogin = document.getElementById("inputSenhaLogin")
 const usuarioSalvo = JSON.parse(localStorage.getItem("usuario"))
 
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        botaoLogin.click()
+    }
+})
+
 botaoLogin.addEventListener("click", () => {
     if (localStorage.getItem("usuario") != null) {
         if (inputEmailLogin.value.trim() != "" && 
