@@ -104,6 +104,10 @@ input:focus {
     transform: scale(1.05);
 }
 
+a:hover {
+    text-decoration: underline wavy var(--cor-principal);
+}
+
 @media (max-width: 1024px) {
     #logoPrincipal {
         height: 150px;

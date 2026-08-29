@@ -104,6 +104,10 @@ input:focus {
     border-color: var(--cor-secundaria);
 }
 
+a:hover {
+    text-decoration: underline wavy var(--cor-principal);
+}
+
 @media (max-width: 1024px) {
     #logoPrincipal {
         height: 150px;
