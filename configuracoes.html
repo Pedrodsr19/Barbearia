@@ -12,11 +12,10 @@
 <body>
     <div id="nav">
         <div id="voltar">
-            <a href="home.html"> < </a> 
-        </div> 
-        <div id="textoNav">
-                <span id="configTexto">Configurações</span>
-                <span id="configTextinho">Ajuste as suas Configurações</span>
+            <a href="home.html">
+                < </a> </div> <div id="textoNav">
+                    <span id="configTexto">Configurações</span>
+                    <span id="configTextinho">Ajuste as suas Configurações</span>
         </div>
     </div>
     <div id="tela">
@@ -39,23 +38,38 @@
             <span id="textoDados">Dados da Sua Conta</span>
             <div id="redefinaNome" class="redefinir">
                 <label>Redefina seu Nome</label>
-                <input type="text" placeholder="Novo Nome">
-                <button class="botaoOk">CONFIRMAR</button>
+                <input type="text" placeholder="Novo Nome" id="inputNome">
+                <button class="botaoOk" id="confirmarNome">CONFIRMAR</button>
             </div>
             <div id="redefinaEmail" class="redefinir">
                 <label>Redefina seu Email</label>
-                <input type="email" placeholder="Email Atual">
-                <input type="email" placeholder="Novo Email">
-                <button class="botaoOk">CONFIRMAR</button>
+                <input type="email" placeholder="Email Atual" id="inputEmailAtual">
+                <input type="email" placeholder="Novo Email" id="inputEmailNovo">
+                <button class="botaoOk" id="confirmarEmail">CONFIRMAR</button>
             </div>
             <div id="redefinaSenha" class="redefinir">
                 <label>Redefina sua Senha</label>
-                <input type="password" placeholder="Senha Atual">
-                <input type="password" placeholder="Nova Senha">
-                <button class="botaoOk">CONFIRMAR</button>
+                <input type="password" placeholder="Senha Atual" id="inputSenhaAtual">
+                <input type="password" placeholder="Nova Senha" id="inputSenhaNova">
+                <button class="botaoOk" id="confirmarSenha">CONFIRMAR</button>
             </div>
         </div>
+        <div id="telaAparencia">
+            <span id="textoDados">Aparencia</span>
+            <label> Mude o Tema </label>
+            <div id="botoesTema">
+                <button id="temaClaro" class="temas">Tema Claro</button>
+                <button id="temaEscuro" class="temas">Tema Escuro</button>
+            </div>
+        </div>
+        <div id="telaSair">
+            <span id="textoDados">Sair</span>
+            <label>Saia da sua Conta</label>
+            <button id="botaoSair"><img src="img/sair.png">Logout</button>
+        </div>
     </div>
+
+    <script src="js/config.js"></script>
 </body>
 
 </html>
